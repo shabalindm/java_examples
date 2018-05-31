@@ -1,4 +1,5 @@
-import org.junit.Assert;
+package simple;
+
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -9,7 +10,7 @@ public class NamesAndAliases {
 
      @Test
      public void test() {
-          ApplicationContext c = new ClassPathXmlApplicationContext("ctx-1.xml");
+          ApplicationContext c = new ClassPathXmlApplicationContext("simple/namesAndAliases.xml");
 
           assertNotNull(c.getBean("beanID"));
           assertNotNull(c.getBean("name2"));

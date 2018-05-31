@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:lang="http://www.springframework.org/schema/lang"
+       xmlns:lang="http://www.springframework.org/schema/lang" xmlns:c="http://www.springframework.org/schema/c"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/lang
         http://www.springframework.org/schema/lang/spring-lang.xsd">
 
-    <bean class="java.util.Date"/>
-
     <!--
     when the above bean (messenger) is instantiated, this custom
     BeanPostProcessor implementation will output the fact to the system console
     -->
-    <bean class="bean_post_processor.InstantiationTracingBeanPostProcessor"/>
+    <bean class="simple.InstantiationTracingBeanPostProcessor$PostProcessor"/>
+
+
 
 </beans>
